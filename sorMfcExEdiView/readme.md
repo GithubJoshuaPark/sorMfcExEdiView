@@ -1,12 +1,13 @@
 ### Data save and load with Serialization in the CEditView 
 ---
 > SDI type > View: CEditView
-> Doc.Serialize handler¿¡¼­¼­ (View:CEditView).Serialize:  È£Ãâ
-> »çÀü¿¡ ÇÊ¿äÇÑ ÀÚ·áÇü CDataTest ¸¸µë (Serialize °¡»óÇÔ¼ö ±¸Çö ÇÊ¿ä)
+> Doc.Serialize handlerì—ì„œì„œ (View:CEditView).Serialize:  í˜¸ì¶œ
+> ì‚¬ì „ì— í•„ìš”í•œ ìë£Œí˜• CDataTest ë§Œë“¬ (Serialize ê°€ìƒí•¨ìˆ˜ êµ¬í˜„ í•„ìš”)
 
 ---
 
 [ref Serialize using CEditView in MFC](https://www.youtube.com/watch?v=SPcMHGF9FQ0&list=PL7mmuO705dG2zFLKevTtK7eyTzmLxXY4W&index=54)
+
 ![main.jpg](./res/main.jpg)
 
 
