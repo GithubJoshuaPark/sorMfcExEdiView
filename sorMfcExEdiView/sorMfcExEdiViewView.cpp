@@ -27,6 +27,11 @@ BEGIN_MESSAGE_MAP(CsorMfcExEdiViewView, CEditView)
 	ON_COMMAND(ID_FILE_PRINT, &CEditView::OnFilePrint)
 	ON_COMMAND(ID_FILE_PRINT_DIRECT, &CEditView::OnFilePrint)
 	ON_COMMAND(ID_FILE_PRINT_PREVIEW, &CEditView::OnFilePrintPreview)
+	ON_MESSAGE(UM_TESTMESSAGE, &CsorMfcExEdiViewView::OnTestMessage)
+	ON_WM_CREATE()
+	ON_WM_TIMER()
+	ON_WM_PAINT()
+	ON_WM_CLOSE()
 END_MESSAGE_MAP()
 
 // CsorMfcExEdiViewView construction/destruction
@@ -34,7 +39,7 @@ END_MESSAGE_MAP()
 CsorMfcExEdiViewView::CsorMfcExEdiViewView() noexcept
 {
 	// TODO: add construction code here
-
+	m_timer_occur_cnt = 0;
 }
 
 CsorMfcExEdiViewView::~CsorMfcExEdiViewView()
@@ -149,4 +154,88 @@ void CsorMfcExEdiViewView::Serialize(CArchive& ar)
 
 		//delete pcTestData;
 	}
+}
+
+
+// MARK: - User define message handler
+LRESULT CsorMfcExEdiViewView::OnTestMessage(WPARAM wParam, LPARAM lParam) 
+{
+	AfxMessageBox(_T("#define UM_TESTMESSAGE"));
+	return 0;
+}
+
+
+int CsorMfcExEdiViewView::OnCreate(LPCREATESTRUCT lpCreateStruct)
+{
+	if (CEditView::OnCreate(lpCreateStruct) == -1)
+		return -1;
+
+	// TODO:  Add your specialized creation code here
+
+	// MARK: - Make WM_TIMER
+	if (SetTimer(TIMER_ID, 1000, NULL) != TIMER_ID)
+	{
+		AfxMessageBox(_T("Error: Failed to set timer!"));
+	}
+
+	srand((unsigned)time(NULL));
+
+	return 0;
+}
+
+
+void CsorMfcExEdiViewView::OnTimer(UINT_PTR nIDEvent)
+{
+	// TODO: Add your message handler code here and/or call default
+	if (nIDEvent == TIMER_ID) {
+		m_timer_occur_cnt++;
+
+		RedrawWindow();
+	}
+	CEditView::OnTimer(nIDEvent);
+}
+
+
+void CsorMfcExEdiViewView::OnPaint()
+{
+	CPaintDC dc(this); // device context for painting
+	// TODO: Add your message handler code here
+	// Do not call CEditView::OnPaint() for painting messages
+	CRect cRect;
+	GetClientRect(&cRect);
+
+	CString ls_str = _T("");
+	ls_str.Format(_T("Timer occured: [%d]"), m_timer_occur_cnt);
+
+	CFont cFont;
+	CFont* pOldFont;
+
+	cFont.CreatePointFont(100, _T("D2Coding"), &dc);
+
+	pOldFont = dc.SelectObject(&cFont);
+
+	dc.SetBkColor(RGB(0,0,0));
+	dc.SetTextColor(RGB(192,192,192));
+	dc.SetBkMode(TRANSPARENT);
+	dc.TextOutW((cRect.right - cRect.left) / 2, 
+		          (cRect.bottom - cRect.top) / 2, ls_str);
+
+	CImage cImage;
+	cImage.LoadFromResource(AfxGetInstanceHandle(), IDB_BITMAP1);
+
+	cImage.BitBlt(dc.m_hDC, 
+		rand() % cRect.Width(), 
+		rand() % cRect.Height(),
+		SRCCOPY);
+
+	dc.SelectObject(pOldFont);
+}
+
+
+void CsorMfcExEdiViewView::OnClose()
+{
+	// TODO: Add your message handler code here and/or call default
+	KillTimer(TIMER_ID);
+
+	CEditView::OnClose();
 }

@@ -30,7 +30,7 @@
 
 
 
-
+#define UM_TESTMESSAGE WM_USER + 100  // 사용자 정의 메시지
 
 
 

@@ -215,6 +215,7 @@
     <ResourceCompile Include="sorMfcExEdiView.rc" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="res\bg.bmp" />
     <Image Include="res\sorMfcExEdiView.ico" />
     <Image Include="res\sorMfcExEdiViewDoc.ico" />
     <Image Include="res\Toolbar.bmp" />
