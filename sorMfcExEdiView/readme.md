@@ -3,9 +3,12 @@
 > SDI type > View: CEditView
 > Doc.Serialize handler에서서 (View:CEditView).Serialize:  호출
 > 사전에 필요한 자료형 CDataTest 만듬 (Serialize 가상함수 구현 필요)
+
 ---
+
 [ref Serialize using CEditView in MFC](https://www.youtube.com/watch?v=SPcMHGF9FQ0&list=PL7mmuO705dG2zFLKevTtK7eyTzmLxXY4W&index=54)
 ![main.jpg](./res/main.jpg)
+
 
 ```
 #pragma once
