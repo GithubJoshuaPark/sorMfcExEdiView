@@ -183,7 +183,10 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CDlgForDrawBtn.h" />
+    <ClInclude Include="CImageButton.h" />
     <ClInclude Include="CTestData.h" />
+    <ClInclude Include="CTextProgressCtrl.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="MainFrm.h" />
     <ClInclude Include="pch.h" />
@@ -194,7 +197,10 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CDlgForDrawBtn.cpp" />
+    <ClCompile Include="CImageButton.cpp" />
     <ClCompile Include="CTestData.cpp" />
+    <ClCompile Include="CTextProgressCtrl.cpp" />
     <ClCompile Include="MainFrm.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -215,10 +221,44 @@
     <ResourceCompile Include="sorMfcExEdiView.rc" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="res\Ampeross-Qetto-Icon-developer.ico" />
+    <Image Include="res\Arkangl300-Methodic-Folders-Remix-Developer.ico" />
+    <Image Include="res\b0.bmp" />
+    <Image Include="res\b1.bmp" />
+    <Image Include="res\b2.bmp" />
     <Image Include="res\bg.bmp" />
+    <Image Include="res\btns.bmp" />
+    <Image Include="res\Hopstarter-Soft-Scraps-Button-Blank-Blue-11.bmp" />
+    <Image Include="res\Hopstarter-Soft-Scraps-Button-Blank-Blue.ico" />
+    <Image Include="res\Hopstarter-Soft-Scraps-Button-Blank-Gray-11.bmp" />
+    <Image Include="res\Hopstarter-Soft-Scraps-Button-Blank-Gray.ico" />
+    <Image Include="res\Hopstarter-Soft-Scraps-Button-Play-11.bmp" />
+    <Image Include="res\Hopstarter-Soft-Scraps-Button-Play.ico" />
+    <Image Include="res\Iconka-Meow-Cat-box - Copy.ico" />
+    <Image Include="res\Iconka-Meow-Cat-cage.ico" />
+    <Image Include="res\Iconka-Meow-Cat-clean.ico" />
+    <Image Include="res\Iconka-Meow-Cat-drunk - Copy.ico" />
+    <Image Include="res\Iconka-Meow-Cat-eyes - Copy.ico" />
+    <Image Include="res\Iconka-Meow-Cat-fight - Copy.ico" />
+    <Image Include="res\Iconka-Meow-Cat-fish.ico" />
+    <Image Include="res\Iconka-Meow-Cat-grumpy.ico" />
+    <Image Include="res\Iconka-Meow-Cat-hiss.ico" />
+    <Image Include="res\Iconka-Meow-Cat-moustache.ico" />
+    <Image Include="res\Iconka-Meow-Cat-poo.ico" />
+    <Image Include="res\Iconka-Meow-Cat-purr.ico" />
+    <Image Include="res\Iconka-Meow-Cat-slippers.ico" />
+    <Image Include="res\Iconka-Meow-Cat-tied.ico" />
+    <Image Include="res\Iconka-Meow-Cat-walk.ico" />
+    <Image Include="res\Social-Media-Icons-Glossy-Social-Android.ico" />
     <Image Include="res\sorMfcExEdiView.ico" />
     <Image Include="res\sorMfcExEdiViewDoc.ico" />
     <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\Webalys-Kameleon.pics-Programming.ico" />
+    <Image Include="res\Wilnichols-Alumin-Folders-IOS-Icons-Black-Folder.ico" />
+    <Image Include="res\Wilnichols-Alumin-Folders-IOS-Icons-Blue-Folder.ico" />
+    <Image Include="res\Wilnichols-Alumin-Folders-IOS-Icons-Folder.ico" />
+    <Image Include="res\Wilnichols-Alumin-Folders-IOS-Icons-Metal-Folder.ico" />
+    <Image Include="res\Zerode-Plump-Folder-Settings-Tools.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

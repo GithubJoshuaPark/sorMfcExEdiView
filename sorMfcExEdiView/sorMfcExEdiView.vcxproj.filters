@@ -42,6 +42,15 @@
     <ClInclude Include="CTestData.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CDlgForDrawBtn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CImageButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CTextProgressCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="sorMfcExEdiView.cpp">
@@ -60,6 +69,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CTestData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CDlgForDrawBtn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CImageButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CTextProgressCtrl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -86,6 +104,108 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="res\bg.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Hopstarter-Soft-Scraps-Button-Blank-Blue.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Hopstarter-Soft-Scraps-Button-Blank-Gray.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Hopstarter-Soft-Scraps-Button-Play.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Social-Media-Icons-Glossy-Social-Android.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Webalys-Kameleon.pics-Programming.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Ampeross-Qetto-Icon-developer.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Arkangl300-Methodic-Folders-Remix-Developer.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Wilnichols-Alumin-Folders-IOS-Icons-Black-Folder.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Wilnichols-Alumin-Folders-IOS-Icons-Blue-Folder.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Wilnichols-Alumin-Folders-IOS-Icons-Folder.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Wilnichols-Alumin-Folders-IOS-Icons-Metal-Folder.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Zerode-Plump-Folder-Settings-Tools.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Iconka-Meow-Cat-box - Copy.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Iconka-Meow-Cat-cage.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Iconka-Meow-Cat-clean.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Iconka-Meow-Cat-drunk - Copy.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Iconka-Meow-Cat-eyes - Copy.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Iconka-Meow-Cat-fight - Copy.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Iconka-Meow-Cat-fish.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Iconka-Meow-Cat-grumpy.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Iconka-Meow-Cat-hiss.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Iconka-Meow-Cat-moustache.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Iconka-Meow-Cat-poo.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Iconka-Meow-Cat-purr.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Iconka-Meow-Cat-slippers.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Iconka-Meow-Cat-tied.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Iconka-Meow-Cat-walk.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Hopstarter-Soft-Scraps-Button-Blank-Blue-11.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Hopstarter-Soft-Scraps-Button-Blank-Gray-11.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Hopstarter-Soft-Scraps-Button-Play-11.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\b0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\b1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\b2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btns.bmp">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

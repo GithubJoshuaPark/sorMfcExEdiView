@@ -3,6 +3,7 @@
 //
 
 #pragma once
+#include "CDlgForDrawBtn.h"
 
 class CMainFrame : public CFrameWnd
 {
@@ -13,6 +14,7 @@ protected: // create from serialization only
 
 // Attributes
 public:
+	CDlgForDrawBtn m_wndCDlgForDrawBtn;
 
 // Operations
 public:
@@ -41,6 +43,7 @@ protected:
 public:
 
 	afx_msg void OnUmUm();
+	afx_msg void OnUmOpen();
 };
 
 
