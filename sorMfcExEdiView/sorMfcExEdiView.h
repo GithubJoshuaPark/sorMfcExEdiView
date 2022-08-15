@@ -9,10 +9,10 @@
 
 #include "resource.h"       // main symbols
 
-
 // CsorMfcExEdiViewApp:
 // See sorMfcExEdiView.cpp for the implementation of this class
 //
+
 
 class CsorMfcExEdiViewApp : public CWinApp
 {

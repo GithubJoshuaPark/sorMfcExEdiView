@@ -16,7 +16,6 @@
 #define new DEBUG_NEW
 #endif
 
-
 // CsorMfcExEdiViewApp
 
 BEGIN_MESSAGE_MAP(CsorMfcExEdiViewApp, CWinApp)
@@ -55,6 +54,7 @@ CsorMfcExEdiViewApp::CsorMfcExEdiViewApp() noexcept
 
 CsorMfcExEdiViewApp theApp;
 
+ULONG_PTR gdiplusToken; // For Using GDI+
 
 // CsorMfcExEdiViewApp initialization
 
@@ -71,6 +71,14 @@ BOOL CsorMfcExEdiViewApp::InitInstance()
 	InitCommonControlsEx(&InitCtrls);
 
 	CWinApp::InitInstance();
+
+	// ¡Ø¡Ù¡Ú Gdiplus »ç¿ë // For Using GDI+
+	GdiplusStartupInput gidplusStartupInput;
+	if (::GdiplusStartup(&gdiplusToken, &gidplusStartupInput, NULL) != Ok)
+	{
+		AfxMessageBox(_T("ERROR: Failed to initialize GDI+ library!"));
+		return FALSE;
+	}
 
 
 	// Initialize OLE libraries
@@ -139,6 +147,8 @@ int CsorMfcExEdiViewApp::ExitInstance()
 {
 	//TODO: handle additional resources you may have added
 	AfxOleTerm(FALSE);
+
+	::GdiplusShutdown(gdiplusToken); // For Using GDI+
 
 	return CWinApp::ExitInstance();
 }
