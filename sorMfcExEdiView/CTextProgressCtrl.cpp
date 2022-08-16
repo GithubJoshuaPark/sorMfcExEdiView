@@ -35,8 +35,6 @@ void CTextProgressCtrl::OnPaint()
 	// TODO: Add your message handler code here
 	// Do not call CProgressCtrl::OnPaint() for painting messages
 
-	if (m_nData == 100) m_nData = 0;
-
 	CString strTmp = _T("");
 	strTmp.Format(_T("%d%%"), m_nData);
 

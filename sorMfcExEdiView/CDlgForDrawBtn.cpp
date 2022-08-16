@@ -98,7 +98,13 @@ void CDlgForDrawBtn::OnTimer(UINT_PTR nIDEvent)
 {
 	// TODO: Add your message handler code here and/or call default
 	if (nIDEvent == TIMER_ID2) {
-		nPos++;
+		if (nPos > 100) {
+			nPos = 0;
+		}
+		else {
+			nPos++;
+		}
+		
 		m_wndPrgressCtl.SetnData(nPos);
 
 		//RedrawWindow();
